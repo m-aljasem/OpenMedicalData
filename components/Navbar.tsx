@@ -6,33 +6,52 @@ import { Search, Plus, User, LogOut, LogIn, Shield } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import type { SupabaseClient } from "@supabase/supabase-js";
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
   const [role, setRole] = useState<string | null>(null);
-  const supabase = createClient();
+  
+  let supabase: SupabaseClient | null = null;
+  try {
+    supabase = createClient();
+  } catch (error) {
+    // During build time or if env vars are missing, supabase will be null
+    // Component will render without auth features
+  }
 
   useEffect(() => {
-    async function loadUser() {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
+    if (!supabase) return;
 
-      if (user) {
-        setUser(user);
-        const { data } = await supabase
-          .from("roles")
-          .select("role")
-          .eq("user_id", user.id)
-          .single();
-        if (data) setRole(data.role);
+    const currentSupabase = supabase; // Capture for closure
+
+    async function loadUser() {
+      try {
+        const {
+          data: { user },
+        } = await currentSupabase.auth.getUser();
+
+        if (user) {
+          setUser(user);
+          const { data } = await currentSupabase
+            .from("roles")
+            .select("role")
+            .eq("user_id", user.id)
+            .single();
+          if (data) setRole(data.role);
+        }
+      } catch (error) {
+        // Silently fail during build or if Supabase is unavailable
+        console.error("Failed to load user:", error);
       }
     }
     loadUser();
 
-    supabase.auth.onAuthStateChange((event, session) => {
+    const {
+      data: { subscription },
+    } = currentSupabase.auth.onAuthStateChange((event, session) => {
       if (event === "SIGNED_IN") {
         loadUser();
       } else if (event === "SIGNED_OUT") {
@@ -40,9 +59,14 @@ export default function Navbar() {
         setRole(null);
       }
     });
+
+    return () => {
+      subscription.unsubscribe();
+    };
   }, [supabase]);
 
   const handleSignOut = async () => {
+    if (!supabase) return;
     await supabase.auth.signOut();
     router.push("/");
     router.refresh();
