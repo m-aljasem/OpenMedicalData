@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: 255 255 255;
+  --foreground: 15 23 42;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 15 23 42;
+    --foreground: 248 250 252;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}
+
+/* React Image Crop Styles */
+.ReactCrop {
+  position: relative;
+  display: inline-block;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.ReactCrop__image {
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: none;
+}
+
+.ReactCrop__drag-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #3182ce;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.ReactCrop__drag-handle::after {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.ReactCrop__crop-selection {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid #3182ce;
+  cursor: move;
+  box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.5);
 }

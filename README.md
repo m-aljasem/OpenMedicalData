@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OMeD - Open Medical Datasets
+
+A modern, production-ready, open-source web application that serves as a search engine and community platform for sharing links to real-world, open, and free medical datasets.
+
+## Features
+
+- 🔍 **Search & Browse**: Advanced search with specialty filtering
+- 📊 **Dataset Management**: Submit, review, and manage medical datasets
+- 👥 **User Profiles**: Customizable profiles with ORCID, LinkedIn, GitHub integration
+- 💬 **Community Features**: Comments, upvotes, and download tracking
+- 🔐 **Role-Based Access**: Superadmins, Admins, Moderators, and Users
+- 🎨 **Modern UI**: Glassmorphism effects, responsive design, dark mode support
+
+## Tech Stack
+
+- **Frontend**: Next.js 16 with TypeScript
+- **Styling**: TailwindCSS 4
+- **Backend**: Supabase (Auth, Database, Storage)
+- **Deployment**: Vercel (Frontend) + Supabase (Backend)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ and npm/yarn
+- Supabase account and project
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd omedata
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+Create a `.env.local` file in the root directory:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=your_unsplash_api_key
+```
+
+4. Set up the database:
+- Go to your Supabase project dashboard
+- Navigate to SQL Editor
+- Run the schema from `lib/database/schema.sql`
+
+5. (Optional) Seed the database with dummy data:
+- See `SEEDING.md` for detailed instructions
+- Run `npm run seed` after setting up `SUPABASE_SERVICE_ROLE_KEY` in `.env.local`
+
+6. Set up storage bucket:
+- In Supabase, go to Storage
+- Create a bucket named `dataset-covers`
+- Set it to public
+
+7. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Database Schema
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application uses the following tables:
+- `profiles`: User profile information
+- `roles`: User role assignments
+- `datasets`: Medical dataset metadata
+- `comments`: Dataset comments
+- `upvotes`: User upvotes for datasets
+- `downloads`: Download tracking
 
-## Learn More
+See `lib/database/schema.sql` for the complete schema.
 
-To learn more about Next.js, take a look at the following resources:
+## User Roles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Superadmin**: Full platform control
+- **Admin**: Technical/admin panel access
+- **Moderator**: Approve/reject dataset submissions
+- **User**: Submit datasets, comment, upvote
+- **Guest**: Browse and search only
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+### Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Import the repository to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Supabase Setup
+
+- The database and authentication are handled by Supabase
+- Make sure to configure Row Level Security policies (included in schema.sql)
+- Set up storage buckets as mentioned in installation
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Developer
+
+Developed by [Mohamad AlJasem](https://AlJasem.eu.org)
