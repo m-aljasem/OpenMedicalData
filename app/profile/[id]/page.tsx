@@ -1,12 +1,12 @@
 import { createClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import { getGravatarUrl } from "@/lib/utils/avatar";
 import { Database } from "@/lib/supabase/types";
 import { ExternalLink, Mail, Building, GraduationCap } from "lucide-react";
 import DatasetCard from "@/components/DatasetCard";
+import DatasetImage from "@/components/DatasetImage";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -74,7 +74,7 @@ export default async function UserProfilePage({
         {/* Cover Photo */}
         {profile.cover_photo_url && (
           <div className="relative w-full h-64 md:h-96">
-            <Image
+            <DatasetImage
               src={profile.cover_photo_url}
               alt="Cover"
               fill

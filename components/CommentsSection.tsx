@@ -83,8 +83,8 @@ export default function CommentsSection({ datasetId, userId }: CommentsSectionPr
   }
 
   return (
-    <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-gray-200 dark:border-gray-700 p-8">
-      <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Comments</h2>
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200 p-8">
+      <h2 className="text-2xl font-semibold mb-6 text-gray-900">Comments</h2>
 
       {userId ? (
         <form onSubmit={handleSubmit} className="mb-8">
@@ -94,7 +94,7 @@ export default function CommentsSection({ datasetId, userId }: CommentsSectionPr
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="Write a comment..."
               rows={3}
-              className="flex-1 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button
               type="submit"
@@ -107,8 +107,8 @@ export default function CommentsSection({ datasetId, userId }: CommentsSectionPr
           </div>
         </form>
       ) : (
-        <div className="mb-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
-          <p className="text-blue-700 dark:text-blue-300">
+        <div className="mb-8 p-4 bg-blue-50 rounded-xl">
+          <p className="text-blue-700">
             Please{" "}
             <a href="/auth/login" className="underline font-medium">
               sign in
@@ -120,14 +120,14 @@ export default function CommentsSection({ datasetId, userId }: CommentsSectionPr
 
       <div className="space-y-6">
         {comments.length === 0 ? (
-          <p className="text-gray-500 dark:text-gray-400 text-center py-8">
+          <p className="text-gray-500 text-center py-8">
             No comments yet. Be the first to comment!
           </p>
         ) : (
           comments.map((comment) => (
             <div
               key={comment.id}
-              className="flex gap-4 p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl"
+              className="flex gap-4 p-4 bg-gray-50 rounded-xl"
             >
               <div className="flex-shrink-0">
                 {comment.profiles ? (
@@ -137,21 +137,21 @@ export default function CommentsSection({ datasetId, userId }: CommentsSectionPr
                     className="w-10 h-10 rounded-full"
                   />
                 ) : (
-                  <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
-                    <UserIcon className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+                  <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                    <UserIcon className="w-6 h-6 text-gray-600" />
                   </div>
                 )}
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="font-semibold text-gray-900 dark:text-white">
+                  <span className="font-semibold text-gray-900">
                     {comment.profiles?.name || comment.profiles?.email || "Anonymous"}
                   </span>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <span className="text-sm text-gray-500">
                     {format(new Date(comment.created_at), "MMM d, yyyy 'at' h:mm a")}
                   </span>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+                <p className="text-gray-700 whitespace-pre-wrap">
                   {comment.content}
                 </p>
               </div>

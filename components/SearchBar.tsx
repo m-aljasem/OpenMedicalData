@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
@@ -18,22 +21,43 @@ export default function SearchBar() {
   return (
     <form onSubmit={handleSubmit} className="w-full">
       <div className="relative group">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
-        <div className="relative flex items-center bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xl">
-          <Search className="w-6 h-6 text-gray-400 ml-4" />
-          <input
+        {/* Glowing background effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-40 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
+        
+        {/* Glassmorphism container */}
+        <div className="relative flex items-center gap-4 bg-white/90 backdrop-blur-xl rounded-3xl border border-white/50 shadow-2xl p-4 pl-6">
+          <Input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search medical datasets..."
-            className="flex-1 px-4 py-4 bg-transparent outline-none text-gray-900 dark:text-gray-100 placeholder-gray-400 text-lg"
+            placeholder="Search medical datasets... (e.g., cardiology, cancer, genetics)"
+            className={cn(
+              "flex-1 border-0 bg-transparent outline-none text-gray-900 placeholder:text-gray-400",
+              "text-2xl md:text-3xl font-medium",
+              "focus-visible:ring-0 focus-visible:ring-offset-0",
+              "shadow-none"
+            )}
+            style={{ 
+              border: 'none', 
+              boxShadow: 'none', 
+              outline: 'none',
+              height: '60px',
+              padding: '20px'
+            }}
+            onFocus={(e) => {
+              e.target.style.border = 'none';
+              e.target.style.boxShadow = 'none';
+              e.target.style.outline = 'none';
+            }}
           />
-          <button
+          <Button
             type="submit"
-            className="mr-2 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl hover:from-blue-600 hover:to-purple-600 transition-all font-medium shadow-lg hover:shadow-xl"
+            variant="gradient"
+            className="rounded-full w-[60px] h-[60px] p-0 shadow-lg hover:shadow-2xl hover:scale-105 flex items-center justify-center"
           >
-            Search
-          </button>
+            <Search className="w-7 h-7" />
+          </Button>
         </div>
       </div>
     </form>

@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Search, User } from "lucide-react";
-import Image from "next/image";
+import DatasetImage from "@/components/DatasetImage";
 
 const profileSchema = z.object({
   name: z.string().optional(),
@@ -119,16 +119,16 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
   };
 
   return (
-    <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-gray-200 dark:border-gray-700 p-8">
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200 p-8">
       {error && (
-        <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-red-700 dark:text-red-300">
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700">
           {error}
         </div>
       )}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
             Avatar Type
           </label>
           <div className="flex gap-4">
@@ -138,7 +138,7 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
               className={`px-4 py-2 rounded-xl transition-all ${
                 avatarType === "gravatar"
                   ? "bg-blue-500 text-white"
-                  : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                  : "bg-gray-200 text-gray-700"
               }`}
             >
               Gravatar
@@ -149,7 +149,7 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
               className={`px-4 py-2 rounded-xl transition-all ${
                 avatarType === "premade"
                   ? "bg-blue-500 text-white"
-                  : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                  : "bg-gray-200 text-gray-700"
               }`}
             >
               Premade
@@ -158,13 +158,13 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
             Cover Photo
           </label>
           <div className="space-y-4">
             {coverPhotoUrl && (
               <div className="relative w-full h-48 rounded-xl overflow-hidden">
-                <Image src={coverPhotoUrl} alt="Cover" fill className="object-cover" />
+                <DatasetImage src={coverPhotoUrl} alt="Cover" fill className="object-cover" />
               </div>
             )}
             <div className="flex gap-2">
@@ -173,7 +173,7 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
                 value={coverPhotoSearch}
                 onChange={(e) => setCoverPhotoSearch(e.target.value)}
                 placeholder="Search for cover photo keyword"
-                className="flex-1 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="flex-1 px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 type="button"
@@ -184,14 +184,14 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
                 Search
               </button>
             </div>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-gray-500">
               Or enter a direct image URL:{" "}
               <input
                 type="url"
                 value={coverPhotoUrl || ""}
                 onChange={(e) => setCoverPhotoUrl(e.target.value)}
                 placeholder="https://example.com/image.jpg"
-                className="mt-2 w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-2 w-full px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </p>
           </div>
@@ -200,42 +200,42 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Name
           </label>
           <input
             id="name"
             {...register("name")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
         <div>
           <label
             htmlFor="affiliation"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Affiliation
           </label>
           <input
             id="affiliation"
             {...register("affiliation")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
         <div>
           <label
             htmlFor="orcid"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             ORCID
           </label>
           <input
             id="orcid"
             {...register("orcid")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="0000-0000-0000-0000"
           />
         </div>
@@ -243,7 +243,7 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
         <div>
           <label
             htmlFor="linkedin"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             LinkedIn URL
           </label>
@@ -251,18 +251,18 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
             id="linkedin"
             type="url"
             {...register("linkedin")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="https://linkedin.com/in/..."
           />
           {errors.linkedin && (
-            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.linkedin.message}</p>
+            <p className="mt-1 text-sm text-red-600">{errors.linkedin.message}</p>
           )}
         </div>
 
         <div>
           <label
             htmlFor="github"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             GitHub URL
           </label>
@@ -270,18 +270,18 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
             id="github"
             type="url"
             {...register("github")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="https://github.com/..."
           />
           {errors.github && (
-            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.github.message}</p>
+            <p className="mt-1 text-sm text-red-600">{errors.github.message}</p>
           )}
         </div>
 
         <div>
           <label
             htmlFor="google_scholar"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Google Scholar URL
           </label>
@@ -289,11 +289,11 @@ export default function ProfileForm({ user, profile }: ProfileFormProps) {
             id="google_scholar"
             type="url"
             {...register("google_scholar")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="https://scholar.google.com/..."
           />
           {errors.google_scholar && (
-            <p className="mt-1 text-sm text-red-600 dark:text-red-400">
+            <p className="mt-1 text-sm text-red-600">
               {errors.google_scholar.message}
             </p>
           )}

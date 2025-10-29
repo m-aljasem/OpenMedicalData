@@ -155,9 +155,9 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
   };
 
   return (
-    <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-gray-200 dark:border-gray-700 p-8">
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200 p-8">
       {error && (
-        <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-red-700 dark:text-red-300">
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700">
           {error}
         </div>
       )}
@@ -166,25 +166,25 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
         <div>
           <label
             htmlFor="title"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Title *
           </label>
           <input
             id="title"
             {...register("title")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter dataset title"
           />
           {errors.title && (
-            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.title.message}</p>
+            <p className="mt-1 text-sm text-red-600">{errors.title.message}</p>
           )}
         </div>
 
         <div>
           <label
             htmlFor="abstract"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Abstract *
           </label>
@@ -192,11 +192,11 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
             id="abstract"
             {...register("abstract")}
             rows={6}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Describe the dataset..."
           />
           {errors.abstract && (
-            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.abstract.message}</p>
+            <p className="mt-1 text-sm text-red-600">{errors.abstract.message}</p>
           )}
         </div>
 
@@ -204,14 +204,14 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
           <div>
             <label
               htmlFor="specialty"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              className="block text-sm font-medium text-gray-700 mb-2"
             >
               Specialty *
             </label>
             <select
               id="specialty"
               {...register("specialty")}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               {specialties.map((spec) => (
                 <option key={spec} value={spec}>
@@ -224,14 +224,14 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
           <div>
             <label
               htmlFor="doi"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              className="block text-sm font-medium text-gray-700 mb-2"
             >
               DOI (optional)
             </label>
             <input
               id="doi"
               {...register("doi")}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="10.1234/example"
             />
           </div>
@@ -240,14 +240,14 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
         <div>
           <label
             htmlFor="tags"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Tags (comma-separated) *
           </label>
           <input
             id="tags"
             {...register("tags")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="medical imaging, MRI, brain"
           />
         </div>
@@ -255,7 +255,7 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
         <div>
           <label
             htmlFor="dataset_link"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Dataset Link (URL) *
           </label>
@@ -263,11 +263,11 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
             id="dataset_link"
             type="url"
             {...register("dataset_link")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="https://example.com/dataset"
           />
           {errors.dataset_link && (
-            <p className="mt-1 text-sm text-red-600 dark:text-red-400">
+            <p className="mt-1 text-sm text-red-600">
               {errors.dataset_link.message}
             </p>
           )}
@@ -276,14 +276,14 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
         <div>
           <label
             htmlFor="case_size"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Case Size (optional)
           </label>
           <input
             id="case_size"
             {...register("case_size")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="e.g., 1000 cases, 500 patients"
           />
         </div>
@@ -291,7 +291,7 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
         <div>
           <label
             htmlFor="sample_data"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium text-gray-700 mb-2"
           >
             Sample Data Preview (JSON, optional)
           </label>
@@ -299,13 +299,13 @@ export default function SubmissionForm({ userId }: SubmissionFormProps) {
             id="sample_data"
             {...register("sample_data")}
             rows={6}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono text-sm"
             placeholder='{"key": "value", ...}'
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
             Cover Image (optional)
           </label>
           {previewUrl && (
