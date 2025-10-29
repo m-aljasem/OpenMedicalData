@@ -1,0 +1,2578 @@
+[
+  {
+    "title": "MIMIC-IV Clinical Database",
+    "abstract": "Large ICU dataset with deidentified health records including vitals, labs, medications, and clinical notes.",
+    "tags": [
+      "ICU",
+      "EHR",
+      "vitals",
+      "lab",
+      "notes"
+    ],
+    "specialty": "critical care",
+    "dataset_link": "https://physionet.org/content/mimiciv/1.0/",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "patient_id": "P1409",
+      "age": 53,
+      "gender": "M",
+      "measurement": {
+        "bp_systolic": 118,
+        "hr": 58
+      }
+    },
+    "case_size": "100s",
+    "submitted_by_index": 8,
+    "status": "approved",
+    "upvotes_count": 604,
+    "monthly_downloads": 3456
+  },
+  {
+    "title": "eICU Collaborative Research Database",
+    "abstract": "Multi-center critical care database from over 200 hospitals with high-resolution vital signs and treatments.",
+    "tags": [
+      "ICU",
+      "EHR",
+      "multi-center",
+      "vitals"
+    ],
+    "specialty": "critical care",
+    "dataset_link": "https://physionet.org/content/eicu-crd/2.0/",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "patient_id": "P1488",
+      "age": 29,
+      "gender": "M",
+      "measurement": {
+        "bp_systolic": 119,
+        "hr": 82
+      }
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 0,
+    "status": "approved",
+    "upvotes_count": 733,
+    "monthly_downloads": 4464
+  },
+  {
+    "title": "PhysioNet ECG Database (MIT-BIH Arrhythmia)",
+    "abstract": "Classic ECG arrhythmia recordings used for arrhythmia detection research.",
+    "tags": [
+      "ECG",
+      "arrhythmia",
+      "signal processing",
+      "electrocardiography"
+    ],
+    "specialty": "cardiology",
+    "dataset_link": "https://physionet.org/content/mitdb/1.0.0/",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800",
+    "sample_data": {
+      "patient_id": "P6514",
+      "age": 31,
+      "gender": "M",
+      "measurement": {
+        "bp_systolic": 138,
+        "hr": 56
+      }
+    },
+    "case_size": "10,000+",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 44,
+    "monthly_downloads": 3763
+  },
+  {
+    "title": "UK Biobank Imaging and Health Data",
+    "abstract": "Large-scale population cohort with imaging, genetic, and clinical phenotypes (requires application).",
+    "tags": [
+      "population",
+      "imaging",
+      "genetics",
+      "epidemiology"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://www.ukbiobank.ac.uk/",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R3045",
+      "note": "sample"
+    },
+    "case_size": "varies by collection",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 643,
+    "monthly_downloads": 2962
+  },
+  {
+    "title": "ADNI (Alzheimer's Disease Neuroimaging Initiative)",
+    "abstract": "Longitudinal imaging and biomarker data for Alzheimer's disease research.",
+    "tags": [
+      "Alzheimer",
+      "neuroimaging",
+      "MRI",
+      "PET",
+      "biomarkers"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://adni.loni.usc.edu/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S4150",
+      "age": 28,
+      "diagnosis": "Control"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 238,
+    "monthly_downloads": 827
+  },
+  {
+    "title": "OpenNeuro",
+    "abstract": "Open repository for human neuroimaging datasets in BIDS format.",
+    "tags": [
+      "neuroimaging",
+      "fMRI",
+      "MRI",
+      "BIDS"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://openneuro.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S5554",
+      "age": 78,
+      "diagnosis": "AD"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 214,
+    "monthly_downloads": 2187
+  },
+  {
+    "title": "NIH Chest X-ray Dataset (ChestX-ray14)",
+    "abstract": "Large chest X-ray dataset with multiple thoracic disease labels.",
+    "tags": [
+      "chest x-ray",
+      "pneumonia",
+      "thorax",
+      "radiology"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://nihcc.app.box.com/v/ChestXray-NIHCC",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG89840",
+      "modality": "MRI",
+      "finding": "pneumonia"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 3,
+    "status": "approved",
+    "upvotes_count": 473,
+    "monthly_downloads": 3108
+  },
+  {
+    "title": "CheXpert Chest Radiograph Dataset",
+    "abstract": "Large labeled chest radiograph dataset for detection of pathologies.",
+    "tags": [
+      "chest x-ray",
+      "radiology",
+      "labels",
+      "pneumothorax"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://stanfordmlgroup.github.io/competitions/chexpert/",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG93886",
+      "modality": "MRI",
+      "finding": "pneumonia"
+    },
+    "case_size": "10,000+",
+    "submitted_by_index": 0,
+    "status": "approved",
+    "upvotes_count": 32,
+    "monthly_downloads": 2584
+  },
+  {
+    "title": "RSNA Pneumonia Detection Challenge (Kaggle)",
+    "abstract": "Labeled CXR dataset with bounding box annotations for pneumonia.",
+    "tags": [
+      "chest x-ray",
+      "pneumonia",
+      "kaggle",
+      "annotations"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://www.kaggle.com/c/rsna-pneumonia-detection-challenge",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG45093",
+      "modality": "CXR",
+      "finding": "pneumonia"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 671,
+    "monthly_downloads": 4089
+  },
+  {
+    "title": "LIDC-IDRI (Lung CT)",
+    "abstract": "Lung CT scans annotated by radiologists for nodule detection.",
+    "tags": [
+      "lung",
+      "CT",
+      "nodules",
+      "annotations"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-8517",
+      "cancer_type": "LUAD",
+      "mutations": 136
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 764,
+    "monthly_downloads": 4788
+  },
+  {
+    "title": "LUNA16 (Lung Nodule Analysis)",
+    "abstract": "Subset/benchmark for lung nodule detection from LIDC.",
+    "tags": [
+      "CT",
+      "lung nodules",
+      "LUNA"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://luna16.grand-challenge.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-7543",
+      "cancer_type": "LUSC",
+      "mutations": 113
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 8,
+    "status": "pending",
+    "upvotes_count": 93,
+    "monthly_downloads": 385
+  },
+  {
+    "title": "gnomAD",
+    "abstract": "Aggregated exome and genome sequencing data for allele frequencies.",
+    "tags": [
+      "population genetics",
+      "allele frequency",
+      "variants"
+    ],
+    "specialty": "genetics",
+    "dataset_link": "https://gnomad.broadinstitute.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "sample_id": "HG48469",
+      "gene": "TP53",
+      "variant": "chr6:485763:A:G"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 519,
+    "monthly_downloads": 871
+  },
+  {
+    "title": "ClinVar",
+    "abstract": "Public archive of relationships between genetic variants and phenotypes.",
+    "tags": [
+      "variants",
+      "clinical significance",
+      "pathogenicity"
+    ],
+    "specialty": "genetics",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/clinvar/",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "sample_id": "HG93748",
+      "gene": "APOE",
+      "variant": "chr20:218573:A:G"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 552,
+    "monthly_downloads": 4344
+  },
+  {
+    "title": "DrugBank",
+    "abstract": "Comprehensive drug and drug target information.",
+    "tags": [
+      "drugs",
+      "targets",
+      "pharmacology"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://go.drugbank.com/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB88504",
+      "name": "metformin",
+      "adverse_event": "rash"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 314,
+    "monthly_downloads": 1961
+  },
+  {
+    "title": "ChEMBL",
+    "abstract": "Bioactivity database of drug-like molecules.",
+    "tags": [
+      "compounds",
+      "bioactivity",
+      "drug discovery"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://www.ebi.ac.uk/chembl/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB41571",
+      "name": "atorvastatin",
+      "adverse_event": "nausea"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 7,
+    "status": "approved",
+    "upvotes_count": 778,
+    "monthly_downloads": 4363
+  },
+  {
+    "title": "SIDER (Side Effect Resource)",
+    "abstract": "Information on marketed medicines and their recorded adverse drug reactions.",
+    "tags": [
+      "adverse effects",
+      "drug safety",
+      "pharmacovigilance"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "http://sideeffects.embl.de/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB26828",
+      "name": "atorvastatin",
+      "adverse_event": "rash"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 2,
+    "status": "pending",
+    "upvotes_count": 540,
+    "monthly_downloads": 4969
+  },
+  {
+    "title": "OpenFDA",
+    "abstract": "APIs providing access to FDA datasets (adverse events, recalls, labels).",
+    "tags": [
+      "adverse events",
+      "drug labels",
+      "FDA"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://open.fda.gov/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB37760",
+      "name": "atorvastatin",
+      "adverse_event": "headache"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 4,
+    "status": "pending",
+    "upvotes_count": 687,
+    "monthly_downloads": 3059
+  },
+  {
+    "title": "ClinicalTrials.gov Public Data",
+    "abstract": "Global registry of clinical trials and study metadata.",
+    "tags": [
+      "clinical trials",
+      "protocols",
+      "outcomes"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://clinicaltrials.gov/ct2/resources/download",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R9479",
+      "note": "sample"
+    },
+    "case_size": "varies by collection",
+    "submitted_by_index": 1,
+    "status": "approved",
+    "upvotes_count": 230,
+    "monthly_downloads": 524
+  },
+  {
+    "title": "All of Us Research Program",
+    "abstract": "Large US cohort with health records, genomics, and survey data (access controlled).",
+    "tags": [
+      "cohort",
+      "EHR",
+      "genetics",
+      "survey"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://www.researchallofus.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R1344",
+      "note": "sample"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 8,
+    "status": "approved",
+    "upvotes_count": 602,
+    "monthly_downloads": 1804
+  },
+  {
+    "title": "Human Connectome Project (HCP)",
+    "abstract": "High-quality multi-modal imaging datasets for brain connectivity research.",
+    "tags": [
+      "connectome",
+      "MRI",
+      "diffusion",
+      "fMRI"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://www.humanconnectome.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S2163",
+      "age": 27,
+      "diagnosis": "MCI"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 0,
+    "status": "pending",
+    "upvotes_count": 72,
+    "monthly_downloads": 4211
+  },
+  {
+    "title": "OASIS Brain Imaging Datasets",
+    "abstract": "MRI datasets for studying aging and dementia.",
+    "tags": [
+      "MRI",
+      "aging",
+      "Alzheimer"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://www.oasis-brains.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S5562",
+      "age": 82,
+      "diagnosis": "MCI"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 2,
+    "status": "pending",
+    "upvotes_count": 248,
+    "monthly_downloads": 3874
+  },
+  {
+    "title": "MedMNIST",
+    "abstract": "Lightweight medical image datasets for quick prototyping.",
+    "tags": [
+      "medical imaging",
+      "benchmark",
+      "classification"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://medmnist.github.io/",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG34957",
+      "modality": "CXR",
+      "finding": "normal"
+    },
+    "case_size": "varies by collection",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 420,
+    "monthly_downloads": 3825
+  },
+  {
+    "title": "HAM10000 (Skin lesion)",
+    "abstract": "Dermatoscopic images for skin lesion classification.",
+    "tags": [
+      "dermatology",
+      "skin lesions",
+      "melanoma",
+      "images"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK2612",
+      "lesion_type": "nevus"
+    },
+    "case_size": "varies by collection",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 254,
+    "monthly_downloads": 1569
+  },
+  {
+    "title": "ISIC Skin Cancer Archive",
+    "abstract": "Large dermoscopic image repository for skin lesion analysis.",
+    "tags": [
+      "skin",
+      "melanoma",
+      "dermoscopy"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://isic-archive.com/",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK9786",
+      "lesion_type": "melanoma"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 285,
+    "monthly_downloads": 3789
+  },
+  {
+    "title": "Diabetic Retinopathy Detection (Kaggle)",
+    "abstract": "Fundus images labeled by DR severity.",
+    "tags": [
+      "retina",
+      "fundus",
+      "diabetic retinopathy"
+    ],
+    "specialty": "ophthalmology",
+    "dataset_link": "https://www.kaggle.com/c/diabetic-retinopathy-detection",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "image_id": "RET2235",
+      "modality": "fundus",
+      "label": "Severe"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 1,
+    "status": "approved",
+    "upvotes_count": 667,
+    "monthly_downloads": 4428
+  },
+  {
+    "title": "OCT2017 (Kermany)",
+    "abstract": "OCT images for retinal disease classification.",
+    "tags": [
+      "OCT",
+      "retina",
+      "CNV",
+      "DME"
+    ],
+    "specialty": "ophthalmology",
+    "dataset_link": "https://www.kaggle.com/datasets/paultimothymooney/kermany2018",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "image_id": "RET2528",
+      "modality": "fundus",
+      "label": "Mild"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 6,
+    "status": "pending",
+    "upvotes_count": 492,
+    "monthly_downloads": 1751
+  },
+  {
+    "title": "MIMIC-CXR Chest X-ray",
+    "abstract": "CXR images with reports from MIMIC-critical care patients.",
+    "tags": [
+      "chest x-ray",
+      "reports",
+      "imaging"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://physionet.org/content/mimic-cxr/2.0.0/",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG17685",
+      "modality": "CXR",
+      "finding": "fracture"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 6,
+    "status": "pending",
+    "upvotes_count": 465,
+    "monthly_downloads": 2336
+  },
+  {
+    "title": "PhysioNet Challenge Datasets",
+    "abstract": "Collection of challenge datasets (ECG, ICU, etc.) from PhysioNet.",
+    "tags": [
+      "ECG",
+      "signals",
+      "challenge"
+    ],
+    "specialty": "cardiology",
+    "dataset_link": "https://physionet.org/physiobank/database/",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800",
+    "sample_data": {
+      "patient_id": "P8973",
+      "age": 37,
+      "gender": "M",
+      "measurement": {
+        "bp_systolic": 127,
+        "hr": 63
+      }
+    },
+    "case_size": "100s",
+    "submitted_by_index": 9,
+    "status": "approved",
+    "upvotes_count": 765,
+    "monthly_downloads": 2569
+  },
+  {
+    "title": "COVID-19 Radiography Database",
+    "abstract": "Aggregated CXR images of COVID-19, pneumonia, and normal cases.",
+    "tags": [
+      "COVID-19",
+      "chest x-ray",
+      "pneumonia"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG16572",
+      "modality": "MRI",
+      "finding": "fracture"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 8,
+    "status": "approved",
+    "upvotes_count": 58,
+    "monthly_downloads": 4160
+  },
+  {
+    "title": "BIMCV COVID-19 Dataset",
+    "abstract": "Annotated chest X-rays and CTs from COVID-19 patients.",
+    "tags": [
+      "CT",
+      "CXR",
+      "COVID-19"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "http://bimcv.cipf.es/bimcv-projects/bimcv-covid19",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG34356",
+      "modality": "CXR",
+      "finding": "normal"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 583,
+    "monthly_downloads": 2016
+  },
+  {
+    "title": "PhysioNet Sepsis Clinical Records",
+    "abstract": "EHR datasets for sepsis research (various formats).",
+    "tags": [
+      "sepsis",
+      "EHR",
+      "ICU"
+    ],
+    "specialty": "critical care",
+    "dataset_link": "https://physionet.org/content/sepsis-3/1.0/",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "patient_id": "P1651",
+      "age": 28,
+      "gender": "F",
+      "measurement": {
+        "bp_systolic": 156,
+        "hr": 70
+      }
+    },
+    "case_size": "10,000+",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 244,
+    "monthly_downloads": 2175
+  },
+  {
+    "title": "Framingham Heart Study (public datasets)",
+    "abstract": "Longitudinal community cohort for cardiovascular disease research.",
+    "tags": [
+      "cohort",
+      "cardiovascular",
+      "risk"
+    ],
+    "specialty": "cardiology",
+    "dataset_link": "https://framinghamheartstudy.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800",
+    "sample_data": {
+      "patient_id": "P3144",
+      "age": 56,
+      "gender": "F",
+      "measurement": {
+        "bp_systolic": 130,
+        "hr": 109
+      }
+    },
+    "case_size": "100s",
+    "submitted_by_index": 0,
+    "status": "pending",
+    "upvotes_count": 636,
+    "monthly_downloads": 4612
+  },
+  {
+    "title": "PEP (Pediatric Emergency dataset)",
+    "abstract": "Pediatric emergency visit dataset (placeholder link).",
+    "tags": [
+      "pediatrics",
+      "ED",
+      "triage"
+    ],
+    "specialty": "pediatrics",
+    "dataset_link": "https://example.org/pep-dataset",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "id": "R2200",
+      "note": "sample"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 135,
+    "monthly_downloads": 2859
+  },
+  {
+    "title": "NHANES (US National Health and Nutrition Examination Survey)",
+    "abstract": "Nationally representative health and nutrition surveys with biomarkers.",
+    "tags": [
+      "survey",
+      "nutrition",
+      "biomarkers"
+    ],
+    "specialty": "public health",
+    "dataset_link": "https://www.cdc.gov/nchs/nhanes/index.htm",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "country": "India",
+      "year": 2011,
+      "indicator_value": 28.5
+    },
+    "case_size": "varies by collection",
+    "submitted_by_index": 8,
+    "status": "pending",
+    "upvotes_count": 626,
+    "monthly_downloads": 4333
+  },
+  {
+    "title": "DHS Program (Demographic and Health Surveys)",
+    "abstract": "Large cross-national survey datasets on population and health.",
+    "tags": [
+      "survey",
+      "global health",
+      "HIV",
+      "nutrition"
+    ],
+    "specialty": "public health",
+    "dataset_link": "https://dhsprogram.com/data/available-datasets.cfm",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "country": "UK",
+      "year": 2009,
+      "indicator_value": 93.18
+    },
+    "case_size": "100s",
+    "submitted_by_index": 2,
+    "status": "pending",
+    "upvotes_count": 118,
+    "monthly_downloads": 876
+  },
+  {
+    "title": "WHO Global Health Observatory (GHO) datasets",
+    "abstract": "WHO's data portal with thousands of health indicators.",
+    "tags": [
+      "global health",
+      "indicators",
+      "mortality"
+    ],
+    "specialty": "public health",
+    "dataset_link": "https://www.who.int/data/gho",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "country": "India",
+      "year": 2008,
+      "indicator_value": 28.18
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 703,
+    "monthly_downloads": 2162
+  },
+  {
+    "title": "GEO Series (Gene Expression Omnibus)",
+    "abstract": "Repository of gene expression and high-throughput functional genomic data.",
+    "tags": [
+      "gene expression",
+      "microarray",
+      "RNA-seq"
+    ],
+    "specialty": "genomics",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/geo/",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "id": "R9004",
+      "note": "sample"
+    },
+    "case_size": "10,000+",
+    "submitted_by_index": 0,
+    "status": "approved",
+    "upvotes_count": 649,
+    "monthly_downloads": 3469
+  },
+  {
+    "title": "ArrayExpress",
+    "abstract": "Functional genomics data repository from EBI.",
+    "tags": [
+      "gene expression",
+      "omics",
+      "microarray"
+    ],
+    "specialty": "genomics",
+    "dataset_link": "https://www.ebi.ac.uk/arrayexpress/",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "id": "R1722",
+      "note": "sample"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 652,
+    "monthly_downloads": 2145
+  },
+  {
+    "title": "GTEx (Genotype-Tissue Expression)",
+    "abstract": "Tissue-specific gene expression across many donors.",
+    "tags": [
+      "gene expression",
+      "tissue",
+      "transcriptomics"
+    ],
+    "specialty": "genetics",
+    "dataset_link": "https://gtexportal.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "sample_id": "HG67912",
+      "gene": "APOE",
+      "variant": "chr14:598153:A:G"
+    },
+    "case_size": "100s",
+    "submitted_by_index": 1,
+    "status": "approved",
+    "upvotes_count": 707,
+    "monthly_downloads": 1221
+  },
+  {
+    "title": "Human Protein Atlas (HPA)",
+    "abstract": "Molecular data on protein expression across tissues and cells.",
+    "tags": [
+      "proteomics",
+      "expression",
+      "atlas"
+    ],
+    "specialty": "genomics",
+    "dataset_link": "https://www.proteinatlas.org/",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "id": "R1590",
+      "note": "sample"
+    },
+    "case_size": "10,000+",
+    "submitted_by_index": 9,
+    "status": "approved",
+    "upvotes_count": 440,
+    "monthly_downloads": 1044
+  },
+  {
+    "title": "The Cancer Imaging Archive (TCIA)",
+    "abstract": "Open archive of cancer imaging datasets with annotations.",
+    "tags": [
+      "cancer",
+      "imaging",
+      "CT",
+      "MRI"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://www.cancerimagingarchive.net/",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-6050",
+      "cancer_type": "LUSC",
+      "mutations": 461
+    },
+    "case_size": "100s",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 698,
+    "monthly_downloads": 2044
+  },
+  {
+    "title": "PhysioNet MIMIC-Note (Clinical NLP)",
+    "abstract": "Deidentified clinical notes for NLP research (subset of MIMIC with notes).",
+    "tags": [
+      "clinical notes",
+      "NLP",
+      "EHR"
+    ],
+    "specialty": "informatics",
+    "dataset_link": "https://physionet.org/content/mimicnotes/",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "id": "R6794",
+      "note": "sample"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 242,
+    "monthly_downloads": 1331
+  },
+  {
+    "title": "Beth Israel Deaconess ECG Database",
+    "abstract": "ECG recordings from BIDMC (example/placeholder).",
+    "tags": [
+      "ECG",
+      "signals"
+    ],
+    "specialty": "cardiology",
+    "dataset_link": "https://physionet.org/content/bidmc/",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800",
+    "sample_data": {
+      "patient_id": "P7755",
+      "age": 21,
+      "gender": "M",
+      "measurement": {
+        "bp_systolic": 132,
+        "hr": 100
+      }
+    },
+    "case_size": "varies by collection",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 163,
+    "monthly_downloads": 885
+  },
+  {
+    "title": "Stroke Imaging Dataset (ISLES)",
+    "abstract": "Ischemic stroke lesion segmentation datasets used in challenges.",
+    "tags": [
+      "stroke",
+      "MRI",
+      "lesion segmentation"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://zenodo.org/communities/islestask/",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S1634",
+      "age": 80,
+      "diagnosis": "MCI"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 312,
+    "monthly_downloads": 1864
+  },
+  {
+    "title": "Dental X-ray Dataset",
+    "abstract": "Dataset of dental radiographs (placeholder).",
+    "tags": [
+      "dental",
+      "x-ray",
+      "orthodontics"
+    ],
+    "specialty": "dentistry",
+    "dataset_link": "https://example.org/dental-xray",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "id": "R1387",
+      "note": "sample"
+    },
+    "case_size": "1,000s",
+    "submitted_by_index": 6,
+    "status": "pending",
+    "upvotes_count": 285,
+    "monthly_downloads": 568
+  },
+  {
+    "title": "Open-i (NIH biomedical image search)",
+    "abstract": "Searchable index of images from PubMed Central articles.",
+    "tags": [
+      "biomedical images",
+      "figures",
+      "literature"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://openi.nlm.nih.gov/",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R6753",
+      "note": "sample"
+    },
+    "case_size": "multi-site",
+    "submitted_by_index": 6,
+    "status": "pending",
+    "upvotes_count": 28,
+    "monthly_downloads": 944
+  },
+  {
+    "title": "Multi-Center Orthopedic Archive",
+    "abstract": "Multi-Center Orthopedic Archive comprises deidentified orthopedic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "orthopedic",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://physionet.org/dataset/multi-center-orthopedic-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL88193",
+      "tissue": "lung",
+      "diagnosis": "malignant"
+    },
+    "case_size": "10328 records",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 788,
+    "monthly_downloads": 7368
+  },
+  {
+    "title": "Population Cardiac Collection",
+    "abstract": "Population Cardiac Collection comprises deidentified cardiac data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cardiac",
+      "pharmacology",
+      "open data"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://physionet.org/dataset/population-cardiac-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB80575",
+      "name": "atorvastatin",
+      "adverse_event": "headache"
+    },
+    "case_size": "6506 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 143,
+    "monthly_downloads": 7773
+  },
+  {
+    "title": "Benchmark Pathology Repository",
+    "abstract": "Benchmark Pathology Repository comprises deidentified pathology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "pathology",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://openneuro.org/dataset/benchmark-pathology-repository",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R6067",
+      "note": "sample"
+    },
+    "case_size": "13432 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 605,
+    "monthly_downloads": 4541
+  },
+  {
+    "title": "Longitudinal Genomic Collection",
+    "abstract": "Longitudinal Genomic Collection comprises deidentified genomic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "genomic",
+      "oncology",
+      "open data"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://www.cdc.gov/dataset/longitudinal-genomic-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-5930",
+      "cancer_type": "GBM",
+      "mutations": 281
+    },
+    "case_size": "63 records",
+    "submitted_by_index": 4,
+    "status": "pending",
+    "upvotes_count": 430,
+    "monthly_downloads": 3521
+  },
+  {
+    "title": "Multi-Modal Cancer Imaging Set",
+    "abstract": "Multi-Modal Cancer Imaging Set comprises deidentified cancer data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cancer",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/multi-modal-cancer-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R8752",
+      "note": "sample"
+    },
+    "case_size": "5610 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 1055,
+    "monthly_downloads": 5438
+  },
+  {
+    "title": "Open Diabetes Consortium",
+    "abstract": "Open Diabetes Consortium comprises deidentified diabetes data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "diabetes",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://openneuro.org/dataset/open-diabetes-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R4262",
+      "note": "sample"
+    },
+    "case_size": "4878 records",
+    "submitted_by_index": 0,
+    "status": "approved",
+    "upvotes_count": 501,
+    "monthly_downloads": 3892
+  },
+  {
+    "title": "Multi-Modal Genomic Consortium",
+    "abstract": "Multi-Modal Genomic Consortium comprises deidentified genomic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "genomic",
+      "neurology",
+      "open data"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://zenodo.org/dataset/multi-modal-genomic-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S7547",
+      "age": 51,
+      "diagnosis": "MCI"
+    },
+    "case_size": "231 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 448,
+    "monthly_downloads": 1440
+  },
+  {
+    "title": "Multi-Modal Cardiac Signal Database",
+    "abstract": "Multi-Modal Cardiac Signal Database comprises deidentified cardiac data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cardiac",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/multi-modal-cardiac-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R8478",
+      "note": "sample"
+    },
+    "case_size": "4419 records",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 906,
+    "monthly_downloads": 5018
+  },
+  {
+    "title": "Adult Diabetes Signal Database",
+    "abstract": "Adult Diabetes Signal Database comprises deidentified diabetes data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "diabetes",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://figshare.com/dataset/adult-diabetes-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R8777",
+      "note": "sample"
+    },
+    "case_size": "14797 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 567,
+    "monthly_downloads": 6273
+  },
+  {
+    "title": "Multi-Modal Stroke Consortium",
+    "abstract": "Multi-Modal Stroke Consortium comprises deidentified stroke data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "stroke",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://openneuro.org/dataset/multi-modal-stroke-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R2269",
+      "note": "sample"
+    },
+    "case_size": "9412 records",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 687,
+    "monthly_downloads": 2619
+  },
+  {
+    "title": "Multi-Center Brain Consortium",
+    "abstract": "Multi-Center Brain Consortium comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "neurology",
+      "open data"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://zenodo.org/dataset/multi-center-brain-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S4505",
+      "age": 28,
+      "diagnosis": "Epilepsy"
+    },
+    "case_size": "13406 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 851,
+    "monthly_downloads": 510
+  },
+  {
+    "title": "Adult Genomic Dataset",
+    "abstract": "Adult Genomic Dataset comprises deidentified genomic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "genomic",
+      "pharmacology",
+      "open data"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://zenodo.org/dataset/adult-genomic-dataset",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB10772",
+      "name": "metformin",
+      "adverse_event": "rash"
+    },
+    "case_size": "12829 records",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 999,
+    "monthly_downloads": 1797
+  },
+  {
+    "title": "Adult Cancer Dataset",
+    "abstract": "Adult Cancer Dataset comprises deidentified cancer data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cancer",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://zenodo.org/dataset/adult-cancer-dataset",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL97670",
+      "tissue": "colon",
+      "diagnosis": "malignant"
+    },
+    "case_size": "5458 records",
+    "submitted_by_index": 7,
+    "status": "approved",
+    "upvotes_count": 1093,
+    "monthly_downloads": 220
+  },
+  {
+    "title": "Benchmark Orthopedic Dataset",
+    "abstract": "Benchmark Orthopedic Dataset comprises deidentified orthopedic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "orthopedic",
+      "psychiatry",
+      "open data"
+    ],
+    "specialty": "psychiatry",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/benchmark-orthopedic-dataset",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R3223",
+      "note": "sample"
+    },
+    "case_size": "15178 records",
+    "submitted_by_index": 2,
+    "status": "approved",
+    "upvotes_count": 532,
+    "monthly_downloads": 3105
+  },
+  {
+    "title": "Longitudinal Cancer Registry",
+    "abstract": "Longitudinal Cancer Registry comprises deidentified cancer data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cancer",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://www.cancerimagingarchive.net/dataset/longitudinal-cancer-registry",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R5558",
+      "note": "sample"
+    },
+    "case_size": "13863 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 963,
+    "monthly_downloads": 158
+  },
+  {
+    "title": "Pediatric Retina Repository",
+    "abstract": "Pediatric Retina Repository comprises deidentified retina data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "retina",
+      "radiology",
+      "open data"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://physionet.org/dataset/pediatric-retina-repository",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG42411",
+      "modality": "CXR",
+      "finding": "normal"
+    },
+    "case_size": "5043 records",
+    "submitted_by_index": 3,
+    "status": "approved",
+    "upvotes_count": 969,
+    "monthly_downloads": 5484
+  },
+  {
+    "title": "Benchmark Retina Imaging Set",
+    "abstract": "Benchmark Retina Imaging Set comprises deidentified retina data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "retina",
+      "ophthalmology",
+      "open data"
+    ],
+    "specialty": "ophthalmology",
+    "dataset_link": "https://openneuro.org/dataset/benchmark-retina-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "image_id": "RET3749",
+      "modality": "fundus",
+      "label": "No DR"
+    },
+    "case_size": "5416 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 1185,
+    "monthly_downloads": 210
+  },
+  {
+    "title": "Benchmark Stroke Collection",
+    "abstract": "Benchmark Stroke Collection comprises deidentified stroke data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "stroke",
+      "dermatology",
+      "open data"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://zenodo.org/dataset/benchmark-stroke-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK2245",
+      "lesion_type": "seborrheic_keratosis"
+    },
+    "case_size": "8007 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 247,
+    "monthly_downloads": 6522
+  },
+  {
+    "title": "Pediatric Trauma Collection",
+    "abstract": "Pediatric Trauma Collection comprises deidentified trauma data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "trauma",
+      "radiology",
+      "open data"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://www.cancerimagingarchive.net/dataset/pediatric-trauma-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG76317",
+      "modality": "MRI",
+      "finding": "nodule"
+    },
+    "case_size": "464 records",
+    "submitted_by_index": 6,
+    "status": "pending",
+    "upvotes_count": 216,
+    "monthly_downloads": 3551
+  },
+  {
+    "title": "Wearable Renal Imaging Set",
+    "abstract": "Wearable Renal Imaging Set comprises deidentified renal data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "renal",
+      "pediatrics",
+      "open data"
+    ],
+    "specialty": "pediatrics",
+    "dataset_link": "https://www.cdc.gov/dataset/wearable-renal-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "id": "R3885",
+      "note": "sample"
+    },
+    "case_size": "17146 records",
+    "submitted_by_index": 4,
+    "status": "pending",
+    "upvotes_count": 952,
+    "monthly_downloads": 3568
+  },
+  {
+    "title": "Pediatric Diabetes Consortium",
+    "abstract": "Pediatric Diabetes Consortium comprises deidentified diabetes data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "diabetes",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/pediatric-diabetes-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL69087",
+      "tissue": "breast",
+      "diagnosis": "malignant"
+    },
+    "case_size": "18722 records",
+    "submitted_by_index": 9,
+    "status": "pending",
+    "upvotes_count": 688,
+    "monthly_downloads": 235
+  },
+  {
+    "title": "Pediatric Brain Imaging Set",
+    "abstract": "Pediatric Brain Imaging Set comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "informatics",
+      "open data"
+    ],
+    "specialty": "informatics",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/pediatric-brain-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "id": "R5232",
+      "note": "sample"
+    },
+    "case_size": "11202 records",
+    "submitted_by_index": 4,
+    "status": "pending",
+    "upvotes_count": 1138,
+    "monthly_downloads": 83
+  },
+  {
+    "title": "Longitudinal Lung Consortium",
+    "abstract": "Longitudinal Lung Consortium comprises deidentified lung data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "lung",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://zenodo.org/dataset/longitudinal-lung-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R4937",
+      "note": "sample"
+    },
+    "case_size": "15650 records",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 35,
+    "monthly_downloads": 762
+  },
+  {
+    "title": "Longitudinal Genomic Consortium",
+    "abstract": "Longitudinal Genomic Consortium comprises deidentified genomic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "genomic",
+      "dermatology",
+      "open data"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://openneuro.org/dataset/longitudinal-genomic-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK7046",
+      "lesion_type": "melanoma"
+    },
+    "case_size": "18186 records",
+    "submitted_by_index": 8,
+    "status": "pending",
+    "upvotes_count": 871,
+    "monthly_downloads": 6110
+  },
+  {
+    "title": "Pediatric Sepsis Imaging Set",
+    "abstract": "Pediatric Sepsis Imaging Set comprises deidentified sepsis data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "sepsis",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://openneuro.org/dataset/pediatric-sepsis-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R5118",
+      "note": "sample"
+    },
+    "case_size": "7604 records",
+    "submitted_by_index": 1,
+    "status": "approved",
+    "upvotes_count": 646,
+    "monthly_downloads": 979
+  },
+  {
+    "title": "Longitudinal Retina Imaging Set",
+    "abstract": "Longitudinal Retina Imaging Set comprises deidentified retina data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "retina",
+      "genetics",
+      "open data"
+    ],
+    "specialty": "genetics",
+    "dataset_link": "https://openneuro.org/dataset/longitudinal-retina-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    "sample_data": {
+      "sample_id": "HG78765",
+      "gene": "APOE",
+      "variant": "chr10:115409:A:G"
+    },
+    "case_size": "6410 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 739,
+    "monthly_downloads": 1469
+  },
+  {
+    "title": "National Sepsis Signal Database",
+    "abstract": "National Sepsis Signal Database comprises deidentified sepsis data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "sepsis",
+      "dermatology",
+      "open data"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://www.cdc.gov/dataset/national-sepsis-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK1745",
+      "lesion_type": "nevus"
+    },
+    "case_size": "18182 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 1005,
+    "monthly_downloads": 840
+  },
+  {
+    "title": "Benchmark Dermatology Imaging Set",
+    "abstract": "Benchmark Dermatology Imaging Set comprises deidentified dermatology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "dermatology",
+      "cardiology",
+      "open data"
+    ],
+    "specialty": "cardiology",
+    "dataset_link": "https://figshare.com/dataset/benchmark-dermatology-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800",
+    "sample_data": {
+      "patient_id": "P6582",
+      "age": 41,
+      "gender": "M",
+      "measurement": {
+        "bp_systolic": 122,
+        "hr": 110
+      }
+    },
+    "case_size": "15704 records",
+    "submitted_by_index": 1,
+    "status": "approved",
+    "upvotes_count": 820,
+    "monthly_downloads": 4028
+  },
+  {
+    "title": "Benchmark Stroke Dataset",
+    "abstract": "Benchmark Stroke Dataset comprises deidentified stroke data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "stroke",
+      "neurology",
+      "open data"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://www.cdc.gov/dataset/benchmark-stroke-dataset",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S5978",
+      "age": 30,
+      "diagnosis": "MCI"
+    },
+    "case_size": "3931 records",
+    "submitted_by_index": 8,
+    "status": "pending",
+    "upvotes_count": 462,
+    "monthly_downloads": 6354
+  },
+  {
+    "title": "Adult Cancer Imaging Set",
+    "abstract": "Adult Cancer Imaging Set comprises deidentified cancer data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cancer",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://openneuro.org/dataset/adult-cancer-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R8025",
+      "note": "sample"
+    },
+    "case_size": "10056 records",
+    "submitted_by_index": 9,
+    "status": "approved",
+    "upvotes_count": 203,
+    "monthly_downloads": 7762
+  },
+  {
+    "title": "Wearable Retina Archive",
+    "abstract": "Wearable Retina Archive comprises deidentified retina data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "retina",
+      "pharmacology",
+      "open data"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/wearable-retina-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB41439",
+      "name": "aspirin",
+      "adverse_event": "headache"
+    },
+    "case_size": "2509 records",
+    "submitted_by_index": 2,
+    "status": "approved",
+    "upvotes_count": 836,
+    "monthly_downloads": 3690
+  },
+  {
+    "title": "Population Cardiac Consortium",
+    "abstract": "Population Cardiac Consortium comprises deidentified cardiac data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cardiac",
+      "informatics",
+      "open data"
+    ],
+    "specialty": "informatics",
+    "dataset_link": "https://openneuro.org/dataset/population-cardiac-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "id": "R8438",
+      "note": "sample"
+    },
+    "case_size": "2382 records",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 405,
+    "monthly_downloads": 3482
+  },
+  {
+    "title": "Annotated Retina Cohort",
+    "abstract": "Annotated Retina Cohort comprises deidentified retina data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "retina",
+      "ophthalmology",
+      "open data"
+    ],
+    "specialty": "ophthalmology",
+    "dataset_link": "https://openneuro.org/dataset/annotated-retina-cohort",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "image_id": "RET2169",
+      "modality": "fundus",
+      "label": "No DR"
+    },
+    "case_size": "5486 records",
+    "submitted_by_index": 4,
+    "status": "pending",
+    "upvotes_count": 899,
+    "monthly_downloads": 1018
+  },
+  {
+    "title": "Telemonitoring Dermatology Collection",
+    "abstract": "Telemonitoring Dermatology Collection comprises deidentified dermatology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "dermatology",
+      "rehabilitation",
+      "open data"
+    ],
+    "specialty": "rehabilitation",
+    "dataset_link": "https://openneuro.org/dataset/telemonitoring-dermatology-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "id": "R9847",
+      "note": "sample"
+    },
+    "case_size": "16230 records",
+    "submitted_by_index": 7,
+    "status": "approved",
+    "upvotes_count": 81,
+    "monthly_downloads": 7286
+  },
+  {
+    "title": "Telemonitoring Pathology Archive",
+    "abstract": "Telemonitoring Pathology Archive comprises deidentified pathology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "pathology",
+      "dentistry",
+      "open data"
+    ],
+    "specialty": "dentistry",
+    "dataset_link": "https://physionet.org/dataset/telemonitoring-pathology-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "id": "R4750",
+      "note": "sample"
+    },
+    "case_size": "18898 records",
+    "submitted_by_index": 9,
+    "status": "approved",
+    "upvotes_count": 551,
+    "monthly_downloads": 4720
+  },
+  {
+    "title": "Imaging COVID-19 Cohort",
+    "abstract": "Imaging COVID-19 Cohort comprises deidentified covid-19 data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "covid-19",
+      "radiology",
+      "open data"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://figshare.com/dataset/imaging-covid-19-cohort",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG95394",
+      "modality": "CT",
+      "finding": "nodule"
+    },
+    "case_size": "5997 records",
+    "submitted_by_index": 9,
+    "status": "pending",
+    "upvotes_count": 1007,
+    "monthly_downloads": 7938
+  },
+  {
+    "title": "Multi-Modal Pathology Collection",
+    "abstract": "Multi-Modal Pathology Collection comprises deidentified pathology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "pathology",
+      "neurology",
+      "open data"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://www.cancerimagingarchive.net/dataset/multi-modal-pathology-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S2713",
+      "age": 40,
+      "diagnosis": "AD"
+    },
+    "case_size": "13538 records",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 820,
+    "monthly_downloads": 6664
+  },
+  {
+    "title": "Multi-Modal Lung Registry",
+    "abstract": "Multi-Modal Lung Registry comprises deidentified lung data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "lung",
+      "radiology",
+      "open data"
+    ],
+    "specialty": "radiology",
+    "dataset_link": "https://openneuro.org/dataset/multi-modal-lung-registry",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "image_id": "IMG25194",
+      "modality": "CT",
+      "finding": "normal"
+    },
+    "case_size": "17829 records",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 111,
+    "monthly_downloads": 1536
+  },
+  {
+    "title": "Pediatric Orthopedic Imaging Set",
+    "abstract": "Pediatric Orthopedic Imaging Set comprises deidentified orthopedic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "orthopedic",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://figshare.com/dataset/pediatric-orthopedic-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R4335",
+      "note": "sample"
+    },
+    "case_size": "8800 records",
+    "submitted_by_index": 8,
+    "status": "approved",
+    "upvotes_count": 589,
+    "monthly_downloads": 3589
+  },
+  {
+    "title": "Open Cardiac Consortium",
+    "abstract": "Open Cardiac Consortium comprises deidentified cardiac data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cardiac",
+      "informatics",
+      "open data"
+    ],
+    "specialty": "informatics",
+    "dataset_link": "https://www.cdc.gov/dataset/open-cardiac-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "id": "R1224",
+      "note": "sample"
+    },
+    "case_size": "18146 records",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 460,
+    "monthly_downloads": 6892
+  },
+  {
+    "title": "Multi-Modal Lung Cohort",
+    "abstract": "Multi-Modal Lung Cohort comprises deidentified lung data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "lung",
+      "ophthalmology",
+      "open data"
+    ],
+    "specialty": "ophthalmology",
+    "dataset_link": "https://figshare.com/dataset/multi-modal-lung-cohort",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "image_id": "RET9337",
+      "modality": "fundus",
+      "label": "Moderate"
+    },
+    "case_size": "13664 records",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 499,
+    "monthly_downloads": 3741
+  },
+  {
+    "title": "Adult Retina Signal Database",
+    "abstract": "Adult Retina Signal Database comprises deidentified retina data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "retina",
+      "oncology",
+      "open data"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://www.cdc.gov/dataset/adult-retina-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-5526",
+      "cancer_type": "GBM",
+      "mutations": 175
+    },
+    "case_size": "16687 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 579,
+    "monthly_downloads": 5947
+  },
+  {
+    "title": "Benchmark Orthopedic Imaging Set",
+    "abstract": "Benchmark Orthopedic Imaging Set comprises deidentified orthopedic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "orthopedic",
+      "dermatology",
+      "open data"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://www.cdc.gov/dataset/benchmark-orthopedic-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK9824",
+      "lesion_type": "melanoma"
+    },
+    "case_size": "11359 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 932,
+    "monthly_downloads": 7641
+  },
+  {
+    "title": "Longitudinal Sepsis Consortium",
+    "abstract": "Longitudinal Sepsis Consortium comprises deidentified sepsis data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "sepsis",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://zenodo.org/dataset/longitudinal-sepsis-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R7730",
+      "note": "sample"
+    },
+    "case_size": "1480 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 780,
+    "monthly_downloads": 3162
+  },
+  {
+    "title": "Multi-Modal Cardiac Cohort",
+    "abstract": "Multi-Modal Cardiac Cohort comprises deidentified cardiac data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cardiac",
+      "oncology",
+      "open data"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://www.data.gov/dataset/multi-modal-cardiac-cohort",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-6439",
+      "cancer_type": "BRCA",
+      "mutations": 448
+    },
+    "case_size": "14477 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 31,
+    "monthly_downloads": 5918
+  },
+  {
+    "title": "Adult Diabetes Cohort",
+    "abstract": "Adult Diabetes Cohort comprises deidentified diabetes data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "diabetes",
+      "oncology",
+      "open data"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/adult-diabetes-cohort",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-5342",
+      "cancer_type": "LUSC",
+      "mutations": 320
+    },
+    "case_size": "13074 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 1092,
+    "monthly_downloads": 3113
+  },
+  {
+    "title": "Wearable Sepsis Imaging Set",
+    "abstract": "Wearable Sepsis Imaging Set comprises deidentified sepsis data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "sepsis",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://www.data.gov/dataset/wearable-sepsis-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R2121",
+      "note": "sample"
+    },
+    "case_size": "7742 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 185,
+    "monthly_downloads": 3555
+  },
+  {
+    "title": "Imaging Stroke Repository",
+    "abstract": "Imaging Stroke Repository comprises deidentified stroke data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "stroke",
+      "ophthalmology",
+      "open data"
+    ],
+    "specialty": "ophthalmology",
+    "dataset_link": "https://figshare.com/dataset/imaging-stroke-repository",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "image_id": "RET5906",
+      "modality": "fundus",
+      "label": "No DR"
+    },
+    "case_size": "1557 records",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 600,
+    "monthly_downloads": 2936
+  },
+  {
+    "title": "Adult Brain Consortium",
+    "abstract": "Adult Brain Consortium comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "pediatrics",
+      "open data"
+    ],
+    "specialty": "pediatrics",
+    "dataset_link": "https://www.data.gov/dataset/adult-brain-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "id": "R3950",
+      "note": "sample"
+    },
+    "case_size": "5620 records",
+    "submitted_by_index": 2,
+    "status": "approved",
+    "upvotes_count": 783,
+    "monthly_downloads": 5076
+  },
+  {
+    "title": "Multi-Modal Renal Cohort",
+    "abstract": "Multi-Modal Renal Cohort comprises deidentified renal data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "renal",
+      "public health",
+      "open data"
+    ],
+    "specialty": "public health",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/multi-modal-renal-cohort",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "country": "Kenya",
+      "year": 2014,
+      "indicator_value": 25.53
+    },
+    "case_size": "357 records",
+    "submitted_by_index": 7,
+    "status": "pending",
+    "upvotes_count": 1119,
+    "monthly_downloads": 1294
+  },
+  {
+    "title": "Multi-Modal Pathology Archive",
+    "abstract": "Multi-Modal Pathology Archive comprises deidentified pathology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "pathology",
+      "neurology",
+      "open data"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://zenodo.org/dataset/multi-modal-pathology-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S8484",
+      "age": 58,
+      "diagnosis": "MCI"
+    },
+    "case_size": "12655 records",
+    "submitted_by_index": 7,
+    "status": "approved",
+    "upvotes_count": 485,
+    "monthly_downloads": 3124
+  },
+  {
+    "title": "Benchmark Dermatology Archive",
+    "abstract": "Benchmark Dermatology Archive comprises deidentified dermatology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "dermatology",
+      "pediatrics",
+      "open data"
+    ],
+    "specialty": "pediatrics",
+    "dataset_link": "https://physionet.org/dataset/benchmark-dermatology-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "id": "R5497",
+      "note": "sample"
+    },
+    "case_size": "315 records",
+    "submitted_by_index": 9,
+    "status": "approved",
+    "upvotes_count": 1017,
+    "monthly_downloads": 6822
+  },
+  {
+    "title": "Imaging COVID-19 Consortium",
+    "abstract": "Imaging COVID-19 Consortium comprises deidentified covid-19 data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "covid-19",
+      "dermatology",
+      "open data"
+    ],
+    "specialty": "dermatology",
+    "dataset_link": "https://www.cancerimagingarchive.net/dataset/imaging-covid-19-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "sample_data": {
+      "image_id": "SK4115",
+      "lesion_type": "seborrheic_keratosis"
+    },
+    "case_size": "8262 records",
+    "submitted_by_index": 2,
+    "status": "approved",
+    "upvotes_count": 80,
+    "monthly_downloads": 2530
+  },
+  {
+    "title": "National Orthopedic Registry",
+    "abstract": "National Orthopedic Registry comprises deidentified orthopedic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "orthopedic",
+      "rehabilitation",
+      "open data"
+    ],
+    "specialty": "rehabilitation",
+    "dataset_link": "https://www.cdc.gov/dataset/national-orthopedic-registry",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "id": "R5835",
+      "note": "sample"
+    },
+    "case_size": "10755 records",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 411,
+    "monthly_downloads": 1082
+  },
+  {
+    "title": "Annotated Trauma Archive",
+    "abstract": "Annotated Trauma Archive comprises deidentified trauma data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "trauma",
+      "pediatrics",
+      "open data"
+    ],
+    "specialty": "pediatrics",
+    "dataset_link": "https://www.cdc.gov/dataset/annotated-trauma-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+    "sample_data": {
+      "id": "R8894",
+      "note": "sample"
+    },
+    "case_size": "9721 records",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 959,
+    "monthly_downloads": 7888
+  },
+  {
+    "title": "Multi-Center COVID-19 Consortium",
+    "abstract": "Multi-Center COVID-19 Consortium comprises deidentified covid-19 data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "covid-19",
+      "neurology",
+      "open data"
+    ],
+    "specialty": "neurology",
+    "dataset_link": "https://zenodo.org/dataset/multi-center-covid-19-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "subject_id": "S6992",
+      "age": 31,
+      "diagnosis": "Epilepsy"
+    },
+    "case_size": "506 records",
+    "submitted_by_index": 4,
+    "status": "approved",
+    "upvotes_count": 931,
+    "monthly_downloads": 3019
+  },
+  {
+    "title": "Benchmark Genomic Registry",
+    "abstract": "Benchmark Genomic Registry comprises deidentified genomic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "genomic",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/benchmark-genomic-registry",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL71797",
+      "tissue": "breast",
+      "diagnosis": "malignant"
+    },
+    "case_size": "7303 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 618,
+    "monthly_downloads": 5318
+  },
+  {
+    "title": "Open Brain Dataset",
+    "abstract": "Open Brain Dataset comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "dentistry",
+      "open data"
+    ],
+    "specialty": "dentistry",
+    "dataset_link": "https://physionet.org/dataset/open-brain-dataset",
+    "cover_image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800",
+    "sample_data": {
+      "id": "R9071",
+      "note": "sample"
+    },
+    "case_size": "3855 records",
+    "submitted_by_index": 1,
+    "status": "approved",
+    "upvotes_count": 1100,
+    "monthly_downloads": 1111
+  },
+  {
+    "title": "Multi-Modal Pathology Signal Database",
+    "abstract": "Multi-Modal Pathology Signal Database comprises deidentified pathology data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "pathology",
+      "psychiatry",
+      "open data"
+    ],
+    "specialty": "psychiatry",
+    "dataset_link": "https://zenodo.org/dataset/multi-modal-pathology-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R3531",
+      "note": "sample"
+    },
+    "case_size": "13644 records",
+    "submitted_by_index": 1,
+    "status": "pending",
+    "upvotes_count": 835,
+    "monthly_downloads": 7692
+  },
+  {
+    "title": "National Sepsis Registry",
+    "abstract": "National Sepsis Registry comprises deidentified sepsis data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "sepsis",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/national-sepsis-registry",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL68287",
+      "tissue": "breast",
+      "diagnosis": "malignant"
+    },
+    "case_size": "3305 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 124,
+    "monthly_downloads": 3261
+  },
+  {
+    "title": "Longitudinal Lung Imaging Set",
+    "abstract": "Longitudinal Lung Imaging Set comprises deidentified lung data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "lung",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/longitudinal-lung-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL94109",
+      "tissue": "colon",
+      "diagnosis": "benign"
+    },
+    "case_size": "1707 records",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 257,
+    "monthly_downloads": 6446
+  },
+  {
+    "title": "Open Diabetes Signal Database",
+    "abstract": "Open Diabetes Signal Database comprises deidentified diabetes data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "diabetes",
+      "pharmacology",
+      "open data"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/open-diabetes-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB38305",
+      "name": "aspirin",
+      "adverse_event": "rash"
+    },
+    "case_size": "4885 records",
+    "submitted_by_index": 9,
+    "status": "approved",
+    "upvotes_count": 567,
+    "monthly_downloads": 7032
+  },
+  {
+    "title": "Multi-Center Trauma Archive",
+    "abstract": "Multi-Center Trauma Archive comprises deidentified trauma data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "trauma",
+      "oncology",
+      "open data"
+    ],
+    "specialty": "oncology",
+    "dataset_link": "https://www.cdc.gov/dataset/multi-center-trauma-archive",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "case_id": "TCGA-1422",
+      "cancer_type": "LUAD",
+      "mutations": 8
+    },
+    "case_size": "11788 records",
+    "submitted_by_index": 3,
+    "status": "pending",
+    "upvotes_count": 32,
+    "monthly_downloads": 1427
+  },
+  {
+    "title": "National Brain Collection",
+    "abstract": "National Brain Collection comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://www.data.gov/dataset/national-brain-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL18330",
+      "tissue": "lung",
+      "diagnosis": "malignant"
+    },
+    "case_size": "11913 records",
+    "submitted_by_index": 8,
+    "status": "approved",
+    "upvotes_count": 925,
+    "monthly_downloads": 4127
+  },
+  {
+    "title": "Benchmark Cardiac Signal Database",
+    "abstract": "Benchmark Cardiac Signal Database comprises deidentified cardiac data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cardiac",
+      "public health",
+      "open data"
+    ],
+    "specialty": "public health",
+    "dataset_link": "https://openneuro.org/dataset/benchmark-cardiac-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "country": "USA",
+      "year": 2001,
+      "indicator_value": 99.86
+    },
+    "case_size": "13210 records",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 1004,
+    "monthly_downloads": 5835
+  },
+  {
+    "title": "Open Renal Repository",
+    "abstract": "Open Renal Repository comprises deidentified renal data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "renal",
+      "rehabilitation",
+      "open data"
+    ],
+    "specialty": "rehabilitation",
+    "dataset_link": "https://www.cancerimagingarchive.net/dataset/open-renal-repository",
+    "cover_image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "sample_data": {
+      "id": "R3430",
+      "note": "sample"
+    },
+    "case_size": "2202 records",
+    "submitted_by_index": 2,
+    "status": "pending",
+    "upvotes_count": 1198,
+    "monthly_downloads": 4492
+  },
+  {
+    "title": "Adult Orthopedic Signal Database",
+    "abstract": "Adult Orthopedic Signal Database comprises deidentified orthopedic data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "orthopedic",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://openneuro.org/dataset/adult-orthopedic-signal-database",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R9282",
+      "note": "sample"
+    },
+    "case_size": "19888 records",
+    "submitted_by_index": 6,
+    "status": "approved",
+    "upvotes_count": 234,
+    "monthly_downloads": 6986
+  },
+  {
+    "title": "Adult Cancer Consortium",
+    "abstract": "Adult Cancer Consortium comprises deidentified cancer data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "cancer",
+      "pharmacology",
+      "open data"
+    ],
+    "specialty": "pharmacology",
+    "dataset_link": "https://zenodo.org/dataset/adult-cancer-consortium",
+    "cover_image_url": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "sample_data": {
+      "drug_id": "DB69441",
+      "name": "metformin",
+      "adverse_event": "rash"
+    },
+    "case_size": "3165 records",
+    "submitted_by_index": 5,
+    "status": "pending",
+    "upvotes_count": 640,
+    "monthly_downloads": 5448
+  },
+  {
+    "title": "Pediatric Brain Imaging Set 10",
+    "abstract": "Pediatric Brain Imaging Set 10 comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "pathology",
+      "open data"
+    ],
+    "specialty": "pathology",
+    "dataset_link": "https://www.kaggle.com/datasets/dataset/pediatric-brain-imaging-set-10",
+    "cover_image_url": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800",
+    "sample_data": {
+      "slide_id": "SL22219",
+      "tissue": "lung",
+      "diagnosis": "benign"
+    },
+    "case_size": "12260 records",
+    "submitted_by_index": 2,
+    "status": "approved",
+    "upvotes_count": 1150,
+    "monthly_downloads": 4601
+  },
+  {
+    "title": "Wearable Lung Collection",
+    "abstract": "Wearable Lung Collection comprises deidentified lung data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "lung",
+      "orthopedics",
+      "open data"
+    ],
+    "specialty": "orthopedics",
+    "dataset_link": "https://www.cancerimagingarchive.net/dataset/wearable-lung-collection",
+    "cover_image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800",
+    "sample_data": {
+      "id": "R1842",
+      "note": "sample"
+    },
+    "case_size": "9475 records",
+    "submitted_by_index": 9,
+    "status": "pending",
+    "upvotes_count": 720,
+    "monthly_downloads": 848
+  },
+  {
+    "title": "Longitudinal Brain Imaging Set",
+    "abstract": "Longitudinal Brain Imaging Set comprises deidentified brain data for research purposes; includes images/signals/clinical annotations collected across multiple centers.",
+    "tags": [
+      "brain",
+      "general",
+      "open data"
+    ],
+    "specialty": "general",
+    "dataset_link": "https://www.ncbi.nlm.nih.gov/dataset/longitudinal-brain-imaging-set",
+    "cover_image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+    "sample_data": {
+      "id": "R6736",
+      "note": "sample"
+    },
+    "case_size": "18277 records",
+    "submitted_by_index": 5,
+    "status": "approved",
+    "upvotes_count": 570,
+    "monthly_downloads": 4703
+  }
+]
